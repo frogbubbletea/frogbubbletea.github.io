@@ -1,18 +1,22 @@
 /* Global background color */
 :root {
     --base-bg: #fdf6e3;  /* everforest medium bg0 */
+    --sec-bg: #efebd4;  /* everforest medium bg_dim */
     --base-fg: #5c6a72;  /* everforest medium fg */
     --url: #8da101;  /* everforest medium green */
 
     /* Alternate color scheme */
     /* --base-bg: #eff1f5; */  /* catppuccin latte base */
+    /* --sec-bg: #dce0e8; */  /* catppuccin latte crust */
     /* --base-fg: #4c4f69 */  /* catppuccin latte text */ 
     /* --url: #40a02b */  /* catppuccin latte green */
 }
 
 /* Apply background color to all pages */
-html {
+body {
     background-color: var(--base-bg);
+    margin: 0;
+    padding: 0;
 }
 
 /* Set font for headings */
