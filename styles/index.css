@@ -63,6 +63,7 @@
 /* Limit education and skills list width */
 .about > .about-edu, .about > .about-skills {
     width: 45vw;
+    min-width: 30em;
     max-width: 45%;
     text-align: left;
     box-sizing: border-box;
