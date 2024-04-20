@@ -1,0 +1,37 @@
+/* Style footer */
+.footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-content: center;
+    text-align: center;
+    box-sizing: border-box;
+    width: 100vw;
+    max-width: 100%;
+    column-gap: 1em;
+    padding: 0.5em 1em 0.5em 1em;
+    background-color: var(--dark-bg);
+}
+
+/* Disable underlining in footer buttons */
+.footer > a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Align everything in footer to center */
+.footer > * {
+    align-self: center;
+}
+
+/* Align text to the left, icons to the right */
+.footer > p {
+    margin-right: auto;
+    color: var(--dark-fg);
+}
+
+/* Set color of footer icons */
+#footer-github, #footer-email {
+    color: var(--dark-fg);
+}

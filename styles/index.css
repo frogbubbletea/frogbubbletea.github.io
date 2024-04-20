@@ -28,6 +28,11 @@
     width: 100%;
 }
 
+/* Set color of the scroll down prompt arrow */
+#front-page-down-arrow {
+    color: var(--base-fg);
+}
+
 /* Limit intro paragraph width and center it */
 .intro {
     display: flex;

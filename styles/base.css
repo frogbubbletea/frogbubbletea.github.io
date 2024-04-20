@@ -2,15 +2,17 @@
 :root {
     --base-bg: #fdf6e3;  /* everforest light medium bg0 */
     --sec-bg: #efebd4;  /* everforest light medium bg_dim */
-    --3rd-bg: #bdc3af;  /* everforest light medium bg5 */
+    --dark-bg: #2d353b;  /* everforest dark medium bg0 */
     --base-fg: #5c6a72;  /* everforest light medium fg */
+    --dark-fg: #d3c6aa;  /* everforest dark medium fg */
     --url: #8da101;  /* everforest light medium green */
 
     /* Alternate color scheme */
     /* --base-bg: #eff1f5; */  /* catppuccin latte base */
     /* --sec-bg: #dce0e8; */  /* catppuccin latte crust */
-    /* --third-bg: #e6e9ef */ /* catppuccin latte mantle */
+    /* --dark-bg: #1e2030 */ /* catppuccin macchiato mantle */
     /* --base-fg: #4c4f69 */  /* catppuccin latte text */ 
+    /* --dark-fg: #cad3f5 */  /* catppuccin macchiato text */
     /* --url: #40a02b */  /* catppuccin latte green */
 }
 
@@ -36,7 +38,7 @@ p, ul, dl {
     color: var(--base-fg)
 }
 @supports (font-variation-settings: normal) {
-    p { font-family: InterVariable, sans-serif; }
+    p { font-family: InterVariable, "Noto Color Emoji", sans-serif; }
 }
 
 /* Set link text color */

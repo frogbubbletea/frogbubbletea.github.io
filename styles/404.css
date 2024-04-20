@@ -32,3 +32,8 @@
     bottom: 1em;
     width: 100%;
 }
+
+/* Set color of go home button */
+#error-page-home {
+    color: var(--base-fg);
+}
