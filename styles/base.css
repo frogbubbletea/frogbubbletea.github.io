@@ -1,13 +1,15 @@
 /* Global background color */
 :root {
-    --base-bg: #fdf6e3;  /* everforest medium bg0 */
-    --sec-bg: #efebd4;  /* everforest medium bg_dim */
-    --base-fg: #5c6a72;  /* everforest medium fg */
-    --url: #8da101;  /* everforest medium green */
+    --base-bg: #fdf6e3;  /* everforest light medium bg0 */
+    --sec-bg: #efebd4;  /* everforest light medium bg_dim */
+    --3rd-bg: #bdc3af;  /* everforest light medium bg5 */
+    --base-fg: #5c6a72;  /* everforest light medium fg */
+    --url: #8da101;  /* everforest light medium green */
 
     /* Alternate color scheme */
     /* --base-bg: #eff1f5; */  /* catppuccin latte base */
     /* --sec-bg: #dce0e8; */  /* catppuccin latte crust */
+    /* --third-bg: #e6e9ef */ /* catppuccin latte mantle */
     /* --base-fg: #4c4f69 */  /* catppuccin latte text */ 
     /* --url: #40a02b */  /* catppuccin latte green */
 }
@@ -20,16 +22,16 @@ body {
 }
 
 /* Set font for headings */
-h1, h2 {
-    font-family: "Libre Baskerville", serif;
+h1, h2, h3 {
+    font-family: "Libre Baskerville", "Noto Color Emoji", serif;
     font-weight: 400;
     font-style: normal;
     color: var(--base-fg)
 }
 
 /* Set font for body text */
-p {
-    font-family: Inter, sans-serif;
+p, ul, dl {
+    font-family: Inter, "Noto Color Emoji", sans-serif;
     font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
     color: var(--base-fg)
 }
@@ -40,4 +42,9 @@ p {
 /* Set link text color */
 a {
     color: var(--url)
+}
+
+/* Set list line height */
+li {
+    margin-bottom: 1em;
 }

@@ -37,11 +37,34 @@
     width: 100vw;
     max-width: 100%;
     margin: 0;
-    padding: 0;
+    padding: 1em 0 1em 0;
     text-align: center;
     background-color: var(--sec-bg)
 }
 
 .intro > h2, .intro > p {
     max-width: 75%
+}
+
+/* Make about occupy whole screen
+    and align contents to the center */
+.about {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 100vw;
+    max-width: 100%;
+    padding: 2em 0 2em 0;
+}
+
+/* Limit education and skills list width */
+.about > .about-edu, .about > .about-skills {
+    width: 45vw;
+    max-width: 45%;
+    text-align: left;
+    box-sizing: border-box;
+    padding: 0 4em 0 4em;
 }
