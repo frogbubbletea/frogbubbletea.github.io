@@ -14,7 +14,8 @@
 
 /* Set front page emoji size */
 .front-page > h1 {
-    font-size: 4em
+    font-size: 4em;
+    line-height: 0;
 }
 
 /* Align the scroll down prompt to the bottom of frontPage */

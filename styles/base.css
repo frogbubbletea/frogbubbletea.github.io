@@ -1,11 +1,13 @@
 /* Global background color */
 :root {
-    --base-bg: #fdf6e3;
-    --base-fg: #5c6a72
+    --base-bg: #fdf6e3;  /* everforest medium bg0 */
+    --base-fg: #5c6a72;  /* everforest medium fg */
+    --url: #8da101;  /* everforest medium green */
 
     /* Alternate color scheme */
-    /* --base-bg: #eff1f5;
-    --base-fg: #4c4f69 */
+    /* --base-bg: #eff1f5; */  /* catppuccin latte base */
+    /* --base-fg: #4c4f69 */  /* catppuccin latte text */ 
+    /* --url: #40a02b */  /* catppuccin latte green */
 }
 
 /* Apply background color to all pages */
@@ -29,4 +31,9 @@ p {
 }
 @supports (font-variation-settings: normal) {
     p { font-family: InterVariable, sans-serif; }
+}
+
+/* Set link text color */
+a {
+    color: var(--url)
 }
