@@ -1,0 +1,26 @@
+/*  Make frontPage occupy whole screen
+    and align contents to the center */
+.front-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    max-width: 100%;
+    margin: 0;
+    text-align: center
+}
+
+/* Set front page emoji size */
+.front-page > h1 {
+    font-size: 4em
+}
+
+/* Align the scroll down prompt to the bottom of frontPage */
+.front-page > .front-page-scroll-prompt {
+    position: absolute;
+    left: 0;
+    bottom: 1em;
+    width: 100%;
+}

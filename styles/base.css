@@ -1,26 +1,32 @@
+/* Global background color */
+:root {
+    --base-bg: #fdf6e3;
+    --base-fg: #5c6a72
+
+    /* Alternate color scheme */
+    /* --base-bg: #eff1f5;
+    --base-fg: #4c4f69 */
+}
+
+/* Apply background color to all pages */
+html {
+    background-color: var(--base-bg);
+}
+
 /* Set font for headings */
 h1, h2 {
     font-family: "Libre Baskerville", serif;
     font-weight: 400;
     font-style: normal;
+    color: var(--base-fg)
 }
 
 /* Set font for body text */
 p {
     font-family: Inter, sans-serif;
     font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
+    color: var(--base-fg)
 }
 @supports (font-variation-settings: normal) {
     p { font-family: InterVariable, sans-serif; }
-}
-
-/* Make frontPage occupy whole screen */
-.frontPage {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    width: 100vw;
-    text-align: center
 }
