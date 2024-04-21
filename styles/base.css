@@ -8,12 +8,12 @@
     --url: #8da101;  /* everforest light medium green */
 
     /* Alternate color scheme */
-    /* --base-bg: #eff1f5; */  /* catppuccin latte base */
-    /* --sec-bg: #dce0e8; */  /* catppuccin latte crust */
-    /* --dark-bg: #1e2030 */ /* catppuccin macchiato mantle */
-    /* --base-fg: #4c4f69 */  /* catppuccin latte text */ 
-    /* --dark-fg: #cad3f5 */  /* catppuccin macchiato text */
-    /* --url: #40a02b */  /* catppuccin latte green */
+    /*--base-bg: #eff1f5;*/  /* catppuccin latte base */
+    /*--sec-bg: #dce0e8;*/  /* catppuccin latte crust */
+    /*--dark-bg: #1e2030;*/ /* catppuccin macchiato mantle */
+    /*--base-fg: #4c4f69;*/  /* catppuccin latte text */ 
+    /*--dark-fg: #cad3f5;*/  /* catppuccin macchiato text */
+    /*--url: #40a02b;*/ /* catppuccin latte green */
 }
 
 /* Apply background color to all pages */

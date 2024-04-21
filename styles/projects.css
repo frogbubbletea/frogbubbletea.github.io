@@ -5,10 +5,16 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
+    text-align: left;
     box-sizing: border-box;
     width: 100vw;
     max-width: 100%;
     padding: 2em 0 2em 0;
+}
+
+/* Reverse display order for project even */
+.project.even {
+    flex-direction: row-reverse;
 }
 
 /* Set background color to alternate for each project */
@@ -16,14 +22,18 @@
     background-color: var(--base-bg);
 }
 .project.even {
-    background-color: var(--sec-bg)
+    background-color: var(--sec-bg);
+}
+
+/* Center text for projects without images */
+.project.noimage {
+    text-align: center;
 }
 
 /* Limit project description and image width */
 .project-desc, .project-img {
     width: 45vw;
     max-width: 45%;
-    text-align: left;
     box-sizing: border-box;
     padding: 0 4em 0 4em;
 }
@@ -33,10 +43,21 @@
     .project {
         flex-direction: column;
         align-items: center;
+        row-gap: 1em;
     }
     .project-desc, .project-img {
         width: 75vw;
         max-width: 75%;
         padding: 0;
     }
+}
+
+/* Give project images rounded corners and outlines */
+.odd > .project-img > img {
+    border-radius: 4px;
+    outline: var(--sec-bg) solid 1em;
+}
+.even > .project-img > img {
+    border-radius: 4px;
+    outline: var(--base-bg) solid 1em;
 }
