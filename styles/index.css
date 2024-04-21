@@ -41,6 +41,22 @@
     color: var(--base-fg);
 }
 
+/* Animate the scroll down prompt arrow */
+#front-page-down-arrow {
+    animation:updown 2s ease-in-out infinite;
+}
+@keyframes updown { 
+    0% {  
+        transform:translateY(0em); 
+    } 
+    50% {
+        transform:translateY(0.5em);
+    }
+    100% {
+        transform:translateY(0em);
+    }
+}
+
 /* Limit intro paragraph width and center it */
 .intro {
     display: flex;
