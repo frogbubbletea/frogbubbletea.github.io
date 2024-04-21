@@ -11,6 +11,7 @@
     max-width: 100%;
     column-gap: 1em;
     padding: 0.5em 1em 0.5em 1em;
+    margin: 0;
     background-color: var(--dark-bg);
 }
 
