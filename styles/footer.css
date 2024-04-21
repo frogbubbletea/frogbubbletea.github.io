@@ -3,20 +3,18 @@
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-content: center;
-    text-align: center;
     box-sizing: border-box;
     width: 100vw;
     max-width: 100%;
-    column-gap: 1em;
     padding: 0.5em 1em 0.5em 1em;
     margin: 0;
     background-color: var(--dark-bg);
 }
 
 /* Disable underlining in footer buttons */
-.footer > a {
+.footer-buttons > a {
     color: inherit;
     text-decoration: none;
 }
@@ -28,11 +26,20 @@
 
 /* Align text to the left, icons to the right */
 .footer > p {
-    margin-right: auto;
+    text-align: left;
     color: var(--dark-fg);
 }
 
 /* Set color of footer icons */
 #footer-github, #footer-email {
     color: var(--dark-fg);
+}
+
+/* Set layout of footer buttons */
+.footer-buttons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    column-gap: 1em;
 }
