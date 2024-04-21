@@ -1,0 +1,20 @@
+[
+    {
+        "name": "Everforest Light Medium",
+        "base-bg": "#fdf6e3",
+        "sec-bg": "#efebd4",
+        "dark-bg": "#2d353b",
+        "base-fg": "#5c6a72",
+        "dark-fg": "#d3c6aa",
+        "url": "#8da101"
+    },
+    {
+        "name": "Catppuccin Latte",
+        "base-bg": "#eff1f5",
+        "sec-bg": "#dce0e8",
+        "dark-bg": "#1e2030",
+        "base-fg": "#4c4f69",
+        "dark-fg": "#cad3f5",
+        "url": "#40a02b"
+    }
+]
