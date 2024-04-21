@@ -26,6 +26,9 @@
                 $(".footer").load("footer.html");
             });
         </script>
+        <!-- Load color schemes -->
+        <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"></script>
+        <script src="scripts/change-theme.js"></script>
     </head>
     <body>
         <!-- Main screen -->
@@ -42,7 +45,12 @@
                     </svg>
                 </a>
             </div>
-            <a class="front-page-link" href="index.html">🍵 Home</a>
+            <div class="front-page-nav">
+                <a class="front-page-link" href="index.html">🍵 Home</a>
+                <form>
+                    <select id="front-page-color-select" onchange="changeColorscheme()"></select>
+                </form>
+            </div>
         </div>
         <!-- Introduction -->
         <div class="intro" id="intro">

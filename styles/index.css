@@ -21,11 +21,31 @@
 }
 
 /* Move front page links to top right */
-.front-page > .front-page-link {
+.front-page > .front-page-nav {
+    display: flex;
+    flex-direction: row;
     position: absolute;
+    align-items: center;
     right: 1em;
     top: 1em;
+    column-gap: 1em;
+}
+
+/* Disable line under front page links */
+.front-page-link {
     text-decoration: none;
+}
+
+/* Style front page theme selection menu */
+#front-page-color-select {
+    border: unset;
+    background-color: inherit;
+    color: var(--url);
+    font-size: 1em;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 6.25em;
 }
 
 /* Align the scroll down prompt to the bottom of frontPage */
