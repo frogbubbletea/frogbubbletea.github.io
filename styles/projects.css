@@ -84,5 +84,5 @@
 }
 .even > .project-img > img {
     border-radius: 4px;
-    box-shadow: 1em 1em 0px var(--base-bg);
+    box-shadow: -1em 1em 0px var(--base-bg);
 }
