@@ -95,3 +95,26 @@
         padding: 0;
     }
 }
+
+/* Style link buttons */
+.link-button {
+    background-color: var(--url);
+    color: var(--base-bg);
+    border: unset;
+    cursor: pointer;
+}
+.link-button:hover {
+    filter: brightness(1.1);
+}
+
+/* Remove text decorations in button rows */
+.button-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    column-gap: 1em;
+    row-gap: 1em;
+}
+
+/* Align button row to 

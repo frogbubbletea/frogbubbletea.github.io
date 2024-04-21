@@ -12,6 +12,25 @@
     padding: 2em 0 2em 0;
 }
 
+/* Give the front page emoji a spin! */
+#project-front > h1 {
+    -webkit-animation:spin 10s linear infinite;
+    -moz-animation:spin 10s linear infinite;
+    animation:spin 10s linear infinite;
+}
+@-moz-keyframes spin { 
+    100% { -moz-transform: rotate(360deg); } 
+}
+@-webkit-keyframes spin { 
+    100% { -webkit-transform: rotate(360deg); } 
+}
+@keyframes spin { 
+    100% { 
+        -webkit-transform: rotate(360deg); 
+        transform:rotate(360deg); 
+    } 
+}
+
 /* Reverse display order for project even */
 .project.even {
     flex-direction: row-reverse;
@@ -25,9 +44,15 @@
     background-color: var(--sec-bg);
 }
 
-/* Center text for projects without images */
+/* Center projects without images */
 .project.noimage {
     text-align: center;
+}
+.project.noimage > .project-desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
 }
 
 /* Limit project description and image width */
@@ -55,9 +80,9 @@
 /* Give project images rounded corners and outlines */
 .odd > .project-img > img {
     border-radius: 4px;
-    outline: var(--sec-bg) solid 1em;
+    box-shadow: 1em 1em 0px var(--sec-bg);
 }
 .even > .project-img > img {
     border-radius: 4px;
-    outline: var(--base-bg) solid 1em;
+    box-shadow: 1em 1em 0px var(--base-bg);
 }
