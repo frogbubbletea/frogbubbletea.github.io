@@ -81,8 +81,18 @@
 .odd > .project-img > img {
     border-radius: 4px;
     box-shadow: 1em 1em 0px var(--sec-bg);
+    transition: 200ms;
 }
 .even > .project-img > img {
     border-radius: 4px;
     box-shadow: -1em 1em 0px var(--base-bg);
+    transition: 200ms;
+}
+
+/* Animate project images when hovered over */
+.odd > .project-img > img:hover {
+    box-shadow: 0px 0px 0px 0.5em var(--sec-bg);
+}
+.even > .project-img > img:hover {
+    box-shadow: 0px 0px 0px 0.5em var(--base-bg);
 }

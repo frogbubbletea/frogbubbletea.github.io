@@ -32,7 +32,14 @@
 
 /* Set color of footer icons */
 #footer-github, #footer-email {
+    transition: 200ms;
     color: var(--dark-fg);
+}
+#footer-github:hover, #footer-email:hover {
+    filter: brightness(0.9);
+}
+#footer-github:active, #footer-email:active {
+    filter: brightness(0.8);
 }
 
 /* Set layout of footer buttons */

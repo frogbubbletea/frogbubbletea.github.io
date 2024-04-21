@@ -36,13 +36,9 @@
     width: 100%;
 }
 
-/* Set color of the scroll down prompt arrow */
-#front-page-down-arrow {
-    color: var(--base-fg);
-}
-
 /* Animate the scroll down prompt arrow */
 #front-page-down-arrow {
+    color: var(--base-fg);
     animation:updown 2s ease-in-out infinite;
 }
 @keyframes updown { 
@@ -121,6 +117,9 @@
 }
 .link-button:hover {
     filter: brightness(1.1);
+}
+.link-button:active {
+    filter: brightness(1.2);
 }
 
 /* Remove text decorations in button rows */

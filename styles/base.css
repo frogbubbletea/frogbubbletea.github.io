@@ -16,6 +16,11 @@
     /*--url: #40a02b;*/ /* catppuccin latte green */
 }
 
+/* Enable smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
 /* Apply background color to all pages */
 body {
     background-color: var(--base-bg);
