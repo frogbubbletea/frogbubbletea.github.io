@@ -1,32 +1,5 @@
-/*  Make error-page occupy whole screen
-    and align contents to the center */
-.error-page {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    width: 100vw;
-    max-height: 100%;
-    max-width: 100%;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-}
-
-/* Set error-page emoji size */
-.error-page > h1 {
-    font-size: 4em;
-    line-height: 0;
-}
-
-/* Limit text width */
-.error-page > p {
-    max-width: 75%;
-}
-
 /* Align the go home button to the bottom of frontPage */
-.error-page > .error-page-home-button {
+.error-page-home-button {
     position: absolute;
     left: 0;
     bottom: 1em;

@@ -20,6 +20,14 @@
     line-height: 0;
 }
 
+/* Move front page links to top right */
+.front-page > .front-page-link {
+    position: absolute;
+    right: 1em;
+    top: 1em;
+    text-decoration: none;
+}
+
 /* Align the scroll down prompt to the bottom of frontPage */
 .front-page > .front-page-scroll-prompt {
     position: absolute;

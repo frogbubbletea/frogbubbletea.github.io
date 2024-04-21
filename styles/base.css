@@ -32,7 +32,7 @@ h1, h2, h3 {
 }
 
 /* Set font for body text */
-p, ul, dl {
+p, a, ul, dl {
     font-family: Inter, "Noto Color Emoji", sans-serif;
     font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
     color: var(--base-fg)

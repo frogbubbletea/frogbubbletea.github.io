@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
+        <meta name="viewport" content="width=device-width" />
+        <!-- Load icon -->
+        <link rel="icon" type="image/x-icon" href="icons/tea-icon.png">
+        <!-- Load font for title -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Noto+Color+Emoji&display=swap" rel="stylesheet">
+        <!-- Load font for body text -->
+        <link rel="preconnect" href="https://rsms.me/">
+        <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+        <!-- Load styles for the webpage itself -->
+        <link rel="stylesheet" href="styles/base.css" />
+        <link rel="stylesheet" href="styles/index.css" />
+        <link rel="stylesheet" href="styles/projects.css" />
+        <link rel="stylesheet" href="styles/footer.css" />
+        <title>frogbubbletea</title>
+        <!-- Load common webpage elements -->
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script>
+            $(function () {
+                $(".footer").load("footer.html");
+            });
+        </script>
+    </head>
+    <body>
+        <!-- Main screen -->
+        <div class="front-page">
+            <h1>🌸</h1>
+            <h2>Projects</h2>
+            <div class="front-page-scroll-prompt">
+                <svg id="front-page-down-arrow" fill="currentColor" height="16px" width="16px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                    viewBox="0 0 330 330" xml:space="preserve">
+                <path id="XMLID_225_" d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393
+                    c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393
+                    s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z"/>
+                </svg>
+            </div>
+            <a class="front-page-link" href="index.html">🍵 Home</a>
+        </div>
+        <!-- Introduction -->
+        <div class="intro">
+            <h2>🌼</h2>
+            <p>You can check out my projects here. Feel free to try them out too!</p>
+        </div>
+        <!-- Projects list -->
+        <!-- Project 1 -->
+        <div class="project odd">
+            <div class="project-desc">
+                <h2>🍦 tab-bot</h2>
+                <p>An HKUST course tracker and analyzer comprised of two Discord bots. Being deployed on 15 servers, including the largest HKUST Discord community, it is widely used by students.</p>
+                <h3>Features</h3>
+                <ul>
+                    <li>Course notifications for changes in course info</li>
+                    <li>On-demand course info lookup</li>
+                    <ul>
+                        <li>Quotas</li>
+                        <li>Sections</li>
+                        <li>Course info</li>
+                    </ul>
+                    <li>Search for a course<br>By course code, Common Core area, or instructor</li>
+                    <li>Plot enrollment trend of a course</li>
+                </ul>
+            </div>
+            <div class="project-img">
+                <!-- Screenshot hosted in tab-bot's GitHub repo -->
+                <img src="https://github.com/frogbubbletea/tab-bot/blob/main/sample_screenshots/hill/quota.png?raw=true" alt="Screenshot of Hill displaying the quotas of a course" width="100%"/>
+            </div>
+        </div>
+        <!-- Footer -->
+        <div class="footer"></div>
+    </body>
+</html>
