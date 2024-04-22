@@ -55,10 +55,15 @@
     box-sizing: border-box;
 }
 
-/* Limit project description and image width */
-.project-desc, .project-img {
+/* Limit project description and image size */
+.project-desc {
     width: 45vw;
     max-width: 45%;
+    box-sizing: border-box;
+    padding: 0 4em 0 4em;
+}
+.project-img {
+    width: 30em;
     box-sizing: border-box;
     padding: 0 4em 0 4em;
 }
