@@ -69,7 +69,7 @@
 }
 
 /* Display project vertically on mobile */
-@media (max-width: 900px) {
+@media (max-width: 1200px) {
     .project {
         flex-direction: column;
         align-items: center;
