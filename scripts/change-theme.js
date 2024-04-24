@@ -27,7 +27,7 @@ function changeColorscheme() {
     var idx = document.getElementById("front-page-color-select").value;
     var picked = colorschemes[idx];
     // Save the setting
-    Cookies.set('colorscheme', idx, {path: ''});
+    Cookies.set('colorscheme', idx, {path: '/'});
 
     document.documentElement.style.setProperty("--base-bg", picked.base_bg);
     document.documentElement.style.setProperty("--sec-bg", picked.sec_bg);
