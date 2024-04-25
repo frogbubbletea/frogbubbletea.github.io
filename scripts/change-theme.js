@@ -16,6 +16,24 @@ const colorschemes = [
         "base_fg": "#4c4f69",
         "dark_fg": "#cad3f5",
         "url": "#40a02b"
+    },
+    {
+        "name": "Gruvbox Dark",
+        "base_bg": "#282828",  // bg
+        "sec_bg": "#3c3836",  // bg1
+        "dark_bg": "#fbf1c7",  // Light bg
+        "base_fg": "#ebdbb2",  // fg
+        "dark_fg": "#3c3836",  // Light fg
+        "url": "#98971a"  // green
+    },
+    {
+        "name": "Nord",
+        "base_bg": "#2e3440",  // nord0
+        "sec_bg": "#3b4252",  // nord1
+        "dark_bg": "#eceff4",  // nord6
+        "base_fg": "#eceff4",  // nord6
+        "dark_fg": "#2e3440",  // nord0
+        "url": "#a3be8c"  // nord14
     }
 ];
 
