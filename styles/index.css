@@ -12,6 +12,7 @@
     margin: 0;
     padding: 0;
     text-align: center;
+    pointer-events: none;  /* Pass clicks to main screen doodle */
 }
 
 /* Set front page emoji size */
@@ -71,6 +72,11 @@
     100% {
         transform:translateY(0em);
     }
+}
+
+/* Pass clicks to main screen doodle */
+.front-page > * {
+    pointer-events: auto;
 }
 
 /* Limit intro paragraph width and center it */
@@ -151,11 +157,4 @@
     align-items: flex-start;
     column-gap: 1em;
     row-gap: 1em;
-}
-
-/* Send all doodles to back by default */
-css-doodle {
-    position: fixed;
-    z-index: -1;
-    opacity: 0.1;
 }

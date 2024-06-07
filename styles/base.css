@@ -84,3 +84,10 @@ a {
 li {
     margin-bottom: 1em;
 }
+
+/* Send all doodles to back by default */
+css-doodle {
+    position: fixed;
+    z-index: -1;
+    opacity: 0.1;
+}
