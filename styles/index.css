@@ -103,6 +103,7 @@
     width: 100vw;
     max-width: 100%;
     padding: 2em 0 2em 0;
+    background-color: var(--base-bg);
 }
 
 /* Limit education and skills list width */
@@ -152,4 +153,9 @@
     row-gap: 1em;
 }
 
-/* Align button row to 
+/* Send all doodles to back by default */
+css-doodle {
+    position: fixed;
+    z-index: -1;
+    opacity: 0.1;
+}

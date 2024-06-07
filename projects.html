@@ -29,9 +29,41 @@
         <!-- Load color schemes -->
         <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"></script>
         <script src="scripts/change-theme.js"></script>
+        <!-- css-doodle -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/css-doodle/0.39.1/css-doodle.min.js"></script>
     </head>
     <body>
         <!-- Main screen -->
+        <css-doodle>
+            :doodle {
+                @grid: 25x25;
+                @size: 100vmax;
+                gap: 1em;
+                overflow: hidden;
+            }
+
+            :after {
+                /*                     🪻        🌿      🪵       🏵️             🌸       🫒       🍋 */
+                content: \@hex(@pick(0x1FABB, 0x1F33F, 0x1FAB5, 0x1F3F5 0xFE0F, 0x1F338, 0x1FAD2, 0x1F34B));
+                font-family: Inter, "Noto Color Emoji", sans-serif;
+                font-size: 2em;
+                transform: rotate(@rand(360deg))
+            }
+
+            animation: test infinite @r(30s, 150s) linear;
+
+            @keyframes test {
+                0% {
+                    transform: translate3d(0, 0, 0) rotate(0deg);
+                }
+                50% {
+                    transform: translate3d(@r(-500%, 1000%), @r(-500%, 1000%), 0) rotate(@r(720deg));
+                }
+                100% {
+                    transform: translate3d(0, 0, 0) rotate(0deg);
+                }
+            }
+        </css-doodle>
         <div class="front-page" id="project-front">
             <h1>🌸</h1>
             <h2>Projects</h2>
