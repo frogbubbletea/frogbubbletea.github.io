@@ -13,6 +13,7 @@
     padding: 0;
     text-align: center;
     pointer-events: none;  /* Pass clicks to main screen doodle */
+    background-color: rgba(var(--base-bg), var(--body-opacity));
 }
 
 /* Set front page emoji size */
@@ -90,7 +91,7 @@
     margin: 0;
     padding: 1em 0 1em 0;
     text-align: center;
-    background-color: rgb(var(--sec-bg))
+    background-color: rgb(var(--sec-bg));
 }
 
 .intro > h2, .intro > p {
@@ -109,6 +110,7 @@
     width: 100vw;
     max-width: 100%;
     padding: 4em 0 4em 0;
+    background-color: rgba(var(--base-bg), var(--body-opacity));
 }
 
 /* Limit education and skills list width */
@@ -120,14 +122,15 @@
     box-sizing: border-box;
     padding: 1em 2em;
     /* background-color: rgba(255, 255, 255, 0.15); */
-    /* background-color: rgba(141, 161, 1, 0.15); */
+    background-color: rgba(var(--sec-bg), 0.15);
+    /* background-color: rgba(var(--dark-bg), 0.15); */
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
     /* box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.1); */
     /* box-shadow: 0 0 2em 4px rgba(0, 0, 0, 0.1); */
     box-shadow: var(--shadow);
     /* border: 2px solid rgba(141, 161, 1, 0.5); */
-    border-radius: 1em;
+    border-radius: 0.5em;
 }
 
 .about > .about-edu {

@@ -60,7 +60,7 @@
     width: 45vw;
     max-width: 45%;
     box-sizing: border-box;
-    padding: 0 4em 0 4em;
+    padding: 0 4em 1em 4em;
 }
 .project-img {
     width: 40em;
@@ -78,7 +78,15 @@
     .project-desc, .project-img {
         width: 75vw;
         max-width: 75%;
-        padding: 0;
+        padding: 1em 0 1em 0;
+    }
+}
+
+/* Shrink project img on tablets */
+@media (min-width: 800px) and (max-width: 1200px) {
+    .project-img {
+        width: 50vw;
+        max-width: 50%;
     }
 }
 

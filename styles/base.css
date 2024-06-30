@@ -25,6 +25,10 @@
             0 0.3px 0.4px hsla(0, 0%, 0%, 0.02),
             0 0.9px 1.5px hsla(0, 0%, 0%, 0.045),
             0 3.5px 6px hsla(0, 0%, 0%, 0.09);
+    
+    /* Opacity values */
+    --body-opacity: 0.85;
+    --body-blur: 16px;
 }
 
 /* Enable smooth scrolling */
@@ -101,7 +105,6 @@ li {
 css-doodle {
     position: fixed;
     z-index: -1;
-    opacity: 0.15;
     animation: fade-in-doodle 2s;
 }
 @keyframes fade-in-doodle {
@@ -112,6 +115,6 @@ css-doodle {
         opacity: 0;
     }
     100% {
-        opacity: 0.15;
+        opacity: 1;
     }
 }
