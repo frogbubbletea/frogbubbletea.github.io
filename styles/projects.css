@@ -38,10 +38,10 @@
 
 /* Set background color to alternate for each project */
 .project.odd {
-    background-color: var(--base-bg);
+    background-color: rgb(var(--base-bg));
 }
 .project.even {
-    background-color: var(--sec-bg);
+    background-color: rgb(var(--sec-bg));
 }
 
 /* Center projects without images */
@@ -85,19 +85,19 @@
 /* Give project images rounded corners and outlines */
 .odd > .project-img > img {
     border-radius: 4px;
-    box-shadow: 1em 1em 0px var(--sec-bg);
+    box-shadow: 1em 1em 0px rgb(var(--sec-bg));
     transition: 200ms;
 }
 .even > .project-img > img {
     border-radius: 4px;
-    box-shadow: -1em 1em 0px var(--base-bg);
+    box-shadow: -1em 1em 0px rgb(var(--base-bg));
     transition: 200ms;
 }
 
 /* Animate project images when hovered over */
 .odd > .project-img > img:hover {
-    box-shadow: 0px 0px 0px 0.5em var(--sec-bg);
+    box-shadow: 0px 0px 0px 0.5em rgb(var(--sec-bg));
 }
 .even > .project-img > img:hover {
-    box-shadow: 0px 0px 0px 0.5em var(--base-bg);
+    box-shadow: 0px 0px 0px 0.5em rgb(var(--base-bg));
 }

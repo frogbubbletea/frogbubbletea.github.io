@@ -8,5 +8,5 @@
 
 /* Set color of go home button */
 #error-page-home {
-    color: var(--base-fg);
+    color: rgb(var(--base-fg));
 }

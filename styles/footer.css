@@ -10,7 +10,7 @@
     max-width: 100%;
     padding: 0.5em 1em 0.5em 1em;
     margin: 0;
-    background-color: var(--dark-bg);
+    background-color: rgb(var(--dark-bg));
 }
 
 /* Disable underlining in footer buttons */
@@ -27,13 +27,13 @@
 /* Align text to the left, icons to the right */
 .footer > p {
     text-align: left;
-    color: var(--dark-fg);
+    color: rgb(var(--dark-fg));
 }
 
 /* Set color of footer icons */
 #footer-github, #footer-email {
     transition: 200ms;
-    color: var(--dark-fg);
+    color: rgb(var(--dark-fg));
 }
 #footer-github:hover, #footer-email:hover {
     filter: brightness(0.9);

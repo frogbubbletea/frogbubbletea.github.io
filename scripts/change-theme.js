@@ -1,39 +1,39 @@
 const colorschemes = [
     {
         "name": "Everforest Light Medium",
-        "base_bg": "#fdf6e3",
-        "sec_bg": "#efebd4",
-        "dark_bg": "#2d353b",
-        "base_fg": "#5c6a72",
-        "dark_fg": "#d3c6aa",
-        "url": "#8da101"
+        "base_bg": "253, 246, 227",
+        "sec_bg": "239, 235, 212",
+        "dark_bg": "45, 53, 59",
+        "base_fg": "92, 106, 114",
+        "dark_fg": "211, 198, 170",
+        "url": "141, 161, 1"
     },
     {
         "name": "Catppuccin Latte",
-        "base_bg": "#eff1f5",
-        "sec_bg": "#dce0e8",
-        "dark_bg": "#1e2030",
-        "base_fg": "#4c4f69",
-        "dark_fg": "#cad3f5",
-        "url": "#40a02b"
+        "base_bg": "239, 241, 245",
+        "sec_bg": "220, 224, 232",
+        "dark_bg": "30, 32, 48",
+        "base_fg": "76, 79, 105",
+        "dark_fg": "202, 211, 245",
+        "url": "64, 160, 43"
     },
     {
         "name": "Gruvbox Dark",
-        "base_bg": "#282828",  // bg
-        "sec_bg": "#3c3836",  // bg1
-        "dark_bg": "#fbf1c7",  // Light bg
-        "base_fg": "#ebdbb2",  // fg
-        "dark_fg": "#3c3836",  // Light fg
-        "url": "#98971a"  // green
+        "base_bg": "40, 40, 40",  // bg
+        "sec_bg": "60, 56, 54",  // bg1
+        "dark_bg": "251, 241, 199",  // Light bg
+        "base_fg": "235, 219, 178",  // fg
+        "dark_fg": "60, 56, 54",  // Light fg
+        "url": "152, 151, 26"  // green
     },
     {
         "name": "Nord",
-        "base_bg": "#2e3440",  // nord0
-        "sec_bg": "#3b4252",  // nord1
-        "dark_bg": "#eceff4",  // nord6
-        "base_fg": "#eceff4",  // nord6
-        "dark_fg": "#2e3440",  // nord0
-        "url": "#a3be8c"  // nord14
+        "base_bg": "46, 52, 64",  // nord0
+        "sec_bg": "59, 66, 82",  // nord1
+        "dark_bg": "236, 239, 244",  // nord6
+        "base_fg": "236, 239, 244",  // nord6
+        "dark_fg": "46, 52, 64",  // nord0
+        "url": "163, 190, 140"  // nord14
     }
 ];
 

@@ -41,7 +41,7 @@
 #front-page-color-select {
     border: unset;
     background-color: inherit;
-    color: var(--url);
+    color: rgb(var(--url));
     font-size: 1em;
     margin: 0;
     padding: 0;
@@ -59,7 +59,7 @@
 
 /* Animate the scroll down prompt arrow */
 #front-page-down-arrow {
-    color: var(--base-fg);
+    color: rgb(var(--base-fg));
     animation:updown 2s ease-in-out infinite;
 }
 @keyframes updown { 
@@ -90,7 +90,7 @@
     margin: 0;
     padding: 1em 0 1em 0;
     text-align: center;
-    background-color: var(--sec-bg)
+    background-color: rgb(var(--sec-bg))
 }
 
 .intro > h2, .intro > p {
@@ -157,8 +157,8 @@
 
 /* Style link buttons */
 .link-button {
-    background-color: var(--url);
-    color: var(--base-bg);
+    background-color: rgb(var(--url));
+    color: rgb(var(--base-bg));
     border: unset;
     cursor: pointer;
 }
