@@ -108,22 +108,37 @@
     box-sizing: border-box;
     width: 100vw;
     max-width: 100%;
-    padding: 2em 0 2em 0;
-    background-color: var(--base-bg);
+    padding: 4em 0 4em 0;
 }
 
 /* Limit education and skills list width */
 .about > .about-edu, .about > .about-skills {
     width: 45vw;
     /* min-width: 20em; */
-    max-width: 45%;
+    max-width: 30%;
     text-align: left;
     box-sizing: border-box;
-    padding: 0 4em 0 4em;
+    padding: 1em 2em;
+    /* background-color: rgba(255, 255, 255, 0.15); */
+    /* background-color: rgba(141, 161, 1, 0.15); */
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    /* box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.1); */
+    /* box-shadow: 0 0 2em 4px rgba(0, 0, 0, 0.1); */
+    box-shadow: var(--shadow);
+    /* border: 2px solid rgba(141, 161, 1, 0.5); */
+    border-radius: 1em;
+}
+
+.about > .about-edu {
+    margin: 0 4em 0 0;
+}
+.about > .about-skills {
+    margin: 0 0 0 4em;
 }
 
 /* Display education and skills vertically on mobile */
-@media (max-width: 900px) {
+@media (max-width: 1200px) {
     .about {
         flex-direction: column;
         align-items: center;
@@ -131,7 +146,12 @@
     .about > .about-edu, .about > .about-skills {
         width: 75vw;
         max-width: 75%;
-        padding: 0;
+    }
+    .about > .about-edu {
+        margin: 0 0 1em 0;
+    }
+    .about > .about-skills {
+        margin: 1em 0 0 0;
     }
 }
 
