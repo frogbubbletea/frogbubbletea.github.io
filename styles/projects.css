@@ -10,6 +10,7 @@
     width: 100vw;
     max-width: 100%;
     padding: 2em 0 2em 0;
+    background-color: rgba(var(--base-bg), var(--body-opacity));
 }
 
 /* Give the front page emoji a spin! */
@@ -37,12 +38,12 @@
 }
 
 /* Set background color to alternate for each project */
-.project.odd {
-    background-color: rgb(var(--base-bg));
+.project.odd, .project.even {
+    background-color: rgba(var(--base-bg), var(--body-opacity));
 }
-.project.even {
-    background-color: rgb(var(--sec-bg));
-}
+/* .project.even {
+    background-color: rgba(var(--sec-bg), var(--body-opacity));
+} */
 
 /* Center projects without images */
 .project.noimage {
@@ -60,7 +61,13 @@
     width: 45vw;
     max-width: 45%;
     box-sizing: border-box;
-    padding: 0 4em 1em 4em;
+    padding: 2em 4em 3em 4em;
+    border-radius: 0.5em;
+    background-color: rgba(var(--sec-bg), 0.15);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    box-shadow: var(--shadow);
+
 }
 .project-img {
     width: 40em;
@@ -78,6 +85,11 @@
     .project-desc, .project-img {
         width: 75vw;
         max-width: 75%;
+    }
+    .project-desc {
+        padding: 2em 4em 3em 4em;
+    }
+    .project-img {
         padding: 1em 0 1em 0;
     }
 }
@@ -91,21 +103,19 @@
 }
 
 /* Give project images rounded corners and outlines */
-.odd > .project-img > img {
+.odd > .project-img > img, .even > .project-img > img {
     border-radius: 4px;
     box-shadow: 1em 1em 0px rgb(var(--sec-bg));
     transition: 200ms;
 }
 .even > .project-img > img {
-    border-radius: 4px;
-    box-shadow: -1em 1em 0px rgb(var(--base-bg));
-    transition: 200ms;
+    box-shadow: -1em 1em 0px rgb(var(--sec-bg));
 }
 
 /* Animate project images when hovered over */
-.odd > .project-img > img:hover {
+.odd > .project-img > img:hover, .even > .project-img > img:hover {
     box-shadow: 0px 0px 0px 0.5em rgb(var(--sec-bg));
 }
 .even > .project-img > img:hover {
-    box-shadow: 0px 0px 0px 0.5em rgb(var(--base-bg));
+    box-shadow: 0px 0px 0px 0.5em rgb(var(--sec-bg));
 }
