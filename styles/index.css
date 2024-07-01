@@ -12,12 +12,32 @@
     margin: 0;
     padding: 0;
     text-align: center;
-    pointer-events: none;  /* Pass clicks to main screen doodle */
     background-color: rgba(var(--base-bg), var(--body-opacity));
 }
 
+/* Maintain layout after nesting front page emoji and title */
+.title-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 16em;
+    height: 16em;
+    /* padding: 3em; */
+    border-radius: 0.5em;
+    transition: 400ms;
+}
+
+/* Apply glass effect on title card hover */
+.title-card:hover {
+    background-color: rgba(var(--sec-bg), 0.15);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    box-shadow: var(--shadow);
+}
+
 /* Set front page emoji size */
-.front-page > h1 {
+.front-page > h1, .title-card > h1 {
     font-size: 4em;
     line-height: 0;
 }
@@ -73,11 +93,6 @@
     100% {
         transform:translateY(0em);
     }
-}
-
-/* Pass clicks to main screen doodle */
-.front-page > * {
-    pointer-events: auto;
 }
 
 /* Limit intro paragraph width and center it */
