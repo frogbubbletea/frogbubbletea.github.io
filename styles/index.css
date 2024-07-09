@@ -35,10 +35,19 @@
     border-radius: 0.5em;
     padding: 0.5em;
     transition: 0.4s;
+}
+
+/* Stack navbar on top of hamburger */
+.front-page-nav {
     z-index: 999;
 }
+.hamburger {
+    z-index: 998;
+}
+
 .hamburger-label {
     font-size: 2em;
+    text-decoration: none;
 }
 
 /* Move hamburger menu into screen on scroll down */
@@ -48,13 +57,11 @@
     background-color: rgba(var(--sec-bg), 0.15);
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
-}
-/* Assign shadow to hamburger menu */
-.hamburger.hamburger.scroll-down {
     box-shadow: var(--shadow), var(--border);
 }
 /* Hide and show navbar and hamburger menu with animation */
 .front-page-nav.hide, .hamburger.hide {
+    pointer-events: none;
     opacity: 0;
 }
 
