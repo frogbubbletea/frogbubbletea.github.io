@@ -23,7 +23,8 @@
 }
 
 /* Move front page links to top right */
-.front-page-nav {
+/* Position hamburger button to the same as front page links */
+.front-page-nav, .hamburger {
     display: flex;
     flex-direction: row;
     position: fixed;
@@ -36,13 +37,25 @@
     transition: 0.4s;
     z-index: 999;
 }
-.front-page-nav.scroll-down {
+.hamburger-label {
+    font-size: 2em;
+}
+
+/* Move hamburger menu into screen on scroll down */
+.front-page-nav.scroll-down, .hamburger.scroll-down {
     right: 1em;
     top: 1em;
     background-color: rgba(var(--sec-bg), 0.15);
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
-    box-shadow: var(--shadow);
+}
+/* Assign shadow to hamburger menu */
+.hamburger.hamburger.scroll-down {
+    box-shadow: var(--shadow), var(--border);
+}
+/* Hide and show navbar and hamburger menu with animation */
+.front-page-nav.hide, .hamburger.hide {
+    opacity: 0;
 }
 
 /* Disable line under front page links */
