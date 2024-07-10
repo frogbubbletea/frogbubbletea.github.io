@@ -23,14 +23,46 @@
 }
 
 /* Move front page links to top right */
-.front-page > .front-page-nav {
+/* Position hamburger button to the same as front page links */
+.front-page-nav, .hamburger {
     display: flex;
     flex-direction: row;
-    position: absolute;
+    position: fixed;
     align-items: center;
+    right: 0.5em;
+    top: 0.5em;
+    column-gap: 1em;
+    border-radius: 0.5em;
+    padding: 0.5em;
+    transition: 0.4s;
+}
+
+/* Stack navbar on top of hamburger */
+.front-page-nav {
+    z-index: 999;
+}
+.hamburger {
+    z-index: 998;
+}
+
+.hamburger-label {
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+/* Move hamburger menu into screen on scroll down */
+.front-page-nav.scroll-down, .hamburger.scroll-down {
     right: 1em;
     top: 1em;
-    column-gap: 1em;
+    background-color: rgba(var(--sec-bg), 0.15);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    box-shadow: var(--shadow), var(--border);
+}
+/* Hide and show navbar and hamburger menu with animation */
+.front-page-nav.hide, .hamburger.hide {
+    pointer-events: none;
+    opacity: 0;
 }
 
 /* Disable line under front page links */

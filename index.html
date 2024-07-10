@@ -25,9 +25,11 @@
                 $(".footer").load("footer.html");
             });
         </script>
-        <!-- Load color schemes -->
+        <!-- Load color schemes and element behaviors -->
         <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"></script>
         <script src="scripts/change-theme.js"></script>
+        <script src="scripts/scroll-detect-nav.js"></script>
+        <script src="scripts/hamburger.js"></script>
         <!-- css-doodle -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/css-doodle/0.39.1/css-doodle.min.js"></script>
     </head>
@@ -77,13 +79,16 @@
                     </svg>
                 </a>
             </div>
-            <div class="front-page-nav">
-                <a class="front-page-link" href="projects.html">🌸 Projects</a>
-                <a class="front-page-link" href="blog/">🪻 Blog</a>
-                <form>
-                    <select id="front-page-color-select" onchange="changeColorscheme()"></select>
-                </form>
-            </div>
+        </div>
+        <div class="front-page-nav">
+            <a class="front-page-link" href="projects.html">🌸 Projects</a>
+            <a class="front-page-link" href="blog/">🪻 Blog</a>
+            <form>
+                <select id="front-page-color-select" onchange="changeColorscheme()"></select>
+            </form>
+        </div>
+        <div class="hamburger">
+            <a href="javascript:void(0);" class="hamburger-label" onclick="hamburgerOpen();">🏵️</a>
         </div>
 
         <!-- About me -->
