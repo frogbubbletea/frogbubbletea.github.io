@@ -177,16 +177,20 @@
     .about {
         flex-direction: column;
         align-items: center;
+        padding: 0;
     }
     .about > .about-edu, .about > .about-skills {
-        width: 75vw;
-        max-width: 75%;
+        width: 100vw;
+        max-width: 100%;
+        border-radius: 0;
+        margin: 0;
+        box-shadow: unset;
     }
     .about > .about-edu {
-        margin: 0 0 1em 0;
+        padding: 1em 2em 0.5em;
     }
     .about > .about-skills {
-        margin: 1em 0 0 0;
+        padding: 0.5em 2em 1em;
     }
 }
 

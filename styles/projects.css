@@ -82,14 +82,18 @@
         align-items: center;
         row-gap: 1em;
     }
-    .project-desc, .project-img {
-        width: 75vw;
-        max-width: 75%;
+    .project-desc {
+        width: 100vw;
+        max-width: 100%;
+        margin: 0;
+        border-radius: 0;
     }
     .project-desc {
         padding: 2em 4em 3em 4em;
     }
     .project-img {
+        width: 75vw;
+        max-width: 75%;
         padding: 1em 0 1em 0;
     }
 }
