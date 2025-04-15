@@ -9,7 +9,7 @@
         <!-- Load font for title -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Noto+Color+Emoji&family=Noto+Emoji:wght@300..700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Noto+Color+Emoji&display=swap" rel="stylesheet">
         <!-- Load font for body text -->
         <link rel="preconnect" href="https://rsms.me/">
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
@@ -83,9 +83,10 @@
         <div class="front-page-nav">
             <a class="front-page-link" href="projects.html">🌸 Projects</a>
             <a class="front-page-link" href="blog/">🪻 Blog</a>
-            <form>
+            <a class="front-page-link" id="themeToggle" href="javascript:void(0);" onclick="switchTheme()">☀️ Theme</a>
+            <!-- <form>
                 <select id="front-page-color-select" onchange="changeColorscheme()"></select>
-            </form>
+            </form> -->
         </div>
         <div class="hamburger hide">
             <a href="javascript:void(0);" class="hamburger-label" onclick="hamburgerOpen();">🏵️</a>
@@ -116,7 +117,7 @@
                     <li>The Hong Kong University of Science and Technology</li>
                     <li>BEng in Computer Science</li>
                     <li>Extended Major in Artificial Intelligence</li>
-                    <li>Graduating in 2025</li>
+                    <li>Graduating in Spring 2025</li>
                 </ul>
                 <h3>Selected Courses</h3>
                 <ul>
@@ -134,11 +135,13 @@
                 <h2>🎋 Skills</h2>
                 <h3>Programming Languages</h3>
                 <ul>
-                    <li>Python<br>discord.py, NumPy, pandas, Matplotlib, Seaborn, TensorFlow, Keras</li>
+                    <li>Python</li>
                     <li>C/C++</li>
                     <li>Java</li>
                     <li>Excel VBA</li>
                     <li>SQL</li>
+                    <li>Kotlin<br>Jetpack Compose</li>
+                    <li>JavaScript<br>React, Next.js</li>
                 </ul>
                 <h3>Markup Languages</h3>
                 <ul>
@@ -151,7 +154,7 @@
                     <li>Microsoft Office<br>Word, Excel, PowerPoint</li>
                     <li>Operating Systems<br>Windows, macOS, Linux</li>
                     <li>Git<br>Git, GitHub</li>
-                    <li>Databases<br>MongoDB, SQLite, TinyDB</li>
+                    <li>Databases<br>MongoDB, SQLite</li>
                 </ul>
                 <h3>Currently Learning</h3>
                 <ul>

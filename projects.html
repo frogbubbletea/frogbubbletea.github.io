@@ -9,7 +9,7 @@
         <!-- Load font for title -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Noto+Color+Emoji&family=Noto+Emoji:wght@300..700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Noto+Color+Emoji&display=swap" rel="stylesheet">
         <!-- Load font for body text -->
         <link rel="preconnect" href="https://rsms.me/">
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
@@ -82,9 +82,10 @@
             <div class="front-page-nav">
                 <a class="front-page-link" href="index.html">🍵 Home</a>
                 <a class="front-page-link" href="blog/">🪻 Blog</a>
-                <form>
+                <a class="front-page-link" id="themeToggle" href="javascript:void(0);" onclick="switchTheme()">☀️ Theme</a>
+                <!-- <form>
                     <select id="front-page-color-select" onchange="changeColorscheme()"></select>
-                </form>
+                </form> -->
             </div>
         </div>
         <div class="hamburger hide">
